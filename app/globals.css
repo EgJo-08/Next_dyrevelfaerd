@@ -3,3 +3,27 @@ body{
     padding: 0;
     box-sizing: border-box;
 }
+
+.home{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.home h3{
+    font-size: 32px;
+    color: #3D5F8F;
+}
+
+.home article{
+    display: flex;
+    flex-direction: column;
+    width: 355px;
+    height: 407px;
+    margin-bottom: 76px;
+    margin-top: 65px;
+}
+.home p{
+    font-size: 16px;
+    line-height: 1.4;
+}

@@ -1,0 +1,49 @@
+.frivilig-main{
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
+
+
+.frivilig-article img{
+    width: 323px;
+    height: 200px;
+    margin: auto;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+
+.frivilig-article div{
+    background-color: #CCCCCC;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    border-bottom: solid #000000;
+    border-width: 1px;
+}
+
+.frivilig-article p{
+    margin-top: 0px;
+    line-height: 1.5;
+}
+
+.frivilig-article{
+    width: 355px;
+    border: solid #000000;
+    display: flex;
+    flex-direction: column;
+    border-width: 1px;
+    
+}
+
+.frivilig{
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+.flyt{
+    margin-left: 145px;
+    font-size: 48px;
+    color: #3D5F8F;
+}

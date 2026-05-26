@@ -1,0 +1,45 @@
+.nyhed{
+    background-color: #DBE4F0;
+    height: 248px;
+    display: flex;
+    gap: 34px;
+    justify-content: center;
+    align-items: center;
+}
+
+.nyhed-text{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+
+.nyhed-text h2{
+    margin-top: 0px;
+    color: #3D5F8F;
+    font-size: 36px;
+    margin-bottom: 0px;
+}
+
+.nyhed-text p{
+    font-size: 18px;
+    margin-top: 0px;
+}
+
+.nyhed-form form{
+ display: flex;
+ gap: 16px;
+}
+
+.navn-form{
+    width: 216px;
+    border-radius: 8px;
+}
+
+.nyhed-form form button{
+    width: 80px;
+    height: 47px;
+    background-color: #3D5F8F;
+    color: #ffffff;
+    border: solid #3D5F8F;
+    border-radius: 8px;
+}
