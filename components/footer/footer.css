@@ -1,0 +1,30 @@
+.footer{
+    background-color: #B8C9E0;
+    display: grid;
+    max-width: 1440px;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    height: 248px;
+    justify-items: center;
+}
+
+.footer h3{
+    text-transform: uppercase;
+    font-size: 24px;
+    margin-bottom: 0;
+}
+
+
+.footer-kontakt ul li{
+    list-style: none;
+    font-size: 16px;
+}
+
+.footer-kontakt ul{
+    margin-top: 8px;
+}
+
+.footer-copyright{
+    align-self: end;
+}
