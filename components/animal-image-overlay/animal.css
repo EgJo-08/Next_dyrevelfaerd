@@ -7,7 +7,7 @@
 .image-text-holder img {
     grid-area: 1 / 1;
     width: 100%;
-    max-width: 1440px;
+    max-width: 2000px;
 
     height: min(360px, 25vw);
     object-fit: cover;

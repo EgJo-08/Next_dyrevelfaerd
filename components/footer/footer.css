@@ -1,7 +1,7 @@
 .footer{
     background-color: #B8C9E0;
     display: grid;
-    max-width: 1440px;
+    max-width: 2000px;
     width: 100%;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;

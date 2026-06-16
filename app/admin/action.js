@@ -14,8 +14,6 @@ export async function LoginAction(previousState, formdata) {
     const username = formdata.get("username")
     const password = formdata.get("password")
 
-    console.log(username, password)
-
 
     const result = loginSchema.safeParse({username, password})
 
