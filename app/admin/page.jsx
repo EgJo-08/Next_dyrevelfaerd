@@ -1,6 +1,6 @@
 "use client"
 
-import { LoginAction } from "./action"
+import { LoginAction } from "../../actions/adminaction"
 import { useActionState } from "react"
 
 const initialState = {
