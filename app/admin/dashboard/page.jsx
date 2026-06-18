@@ -2,7 +2,7 @@ import { redirect } from "next/navigation";
 import { cookies } from "next/headers";
 import GetAnimals from "../../adopter/fetch";
 import "./dashboard.css";
-import AnimalCreate from "../../../components/createanimals/animalform"
+import AnimalCreateButton from "../../../components/createanimals/AnimalCreateButton"
 
 export default async function DashboardPage() {
     const cookieStore = await cookies();
@@ -42,7 +42,8 @@ export default async function DashboardPage() {
         </article>
     ))}
 </div>
-<AnimalCreate />
+<AnimalCreateButton />
+
         </section>
     );
 }

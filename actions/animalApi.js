@@ -16,3 +16,8 @@ export async function createAnimalApi(animalData, token) {
 
   return await response.json();
 }
+
+
+export async function deleteAnimalApi(animalApi, token){
+    
+}
