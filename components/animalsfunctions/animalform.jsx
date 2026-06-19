@@ -1,8 +1,9 @@
 import { createAnimal } from "../../actions/actionanimal"
+import "./createanimals.css"
  
 export default function AnimalCreate() {
     return (
-        <div>
+        <div className="animal-form-wrapper">
             <h2 className="animal-form-wrapper__title">Opret dyr</h2>
             <form action={createAnimal} className="create-animal">
         <div><label htmlFor="name">Navn</label><input type="text" id="name" name="name" required /></div>

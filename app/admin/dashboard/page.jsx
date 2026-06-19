@@ -2,7 +2,8 @@ import { redirect } from "next/navigation";
 import { cookies } from "next/headers";
 import GetAnimals from "../../adopter/fetch";
 import "./dashboard.css";
-import AnimalCreateButton from "../../../components/createanimals/AnimalCreateButton"
+import AnimalCreateButton from "../../../components/animalsfunctions/AnimalCreateButton"
+import DeleteAnimalButton from "../../../components/animalsfunctions/animalDeleteButton"
 
 export default async function DashboardPage() {
     const cookieStore = await cookies();
@@ -11,6 +12,7 @@ export default async function DashboardPage() {
         redirect("/admin");
     }
 
+    const token = cookieStore.get("token")?.value;
     const animals = await GetAnimals();
 
     return (
@@ -34,9 +36,7 @@ export default async function DashboardPage() {
                         Rediger
                     </button>
 
-                    <button className="delete-btn">
-                        Slet
-                    </button>
+                    <DeleteAnimalButton animalId={animal.id} token={token} />
                 </div>
             </div>
         </article>

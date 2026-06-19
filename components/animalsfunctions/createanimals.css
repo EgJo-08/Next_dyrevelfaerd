@@ -1,0 +1,108 @@
+
+.animal-create-button-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.animal-create-button {
+  background-color: #3D5F8F;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.animal-create-button:hover {
+  background-color: #2d4563;
+}
+
+.animal-create-button:active {
+  background-color: #1f2e41;
+}
+
+
+.animal-form-wrapper {
+  background-color: #f5f5f5;
+  padding: 40px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 700px;
+  margin: 20px auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.animal-form-wrapper__title {
+  text-align: center;
+  color: #3D5F8F;
+  margin-bottom: 25px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.create-animal {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.create-animal div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.create-animal label {
+  font-weight: 600;
+  color: #333;
+  font-size: 14px;
+}
+
+.create-animal input,
+.create-animal textarea {
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: inherit;
+  transition: border-color 0.3s ease;
+}
+
+.create-animal input:focus,
+.create-animal textarea:focus {
+  outline: none;
+  border-color: #3D5F8F;
+  box-shadow: 0 0 0 3px rgba(61, 95, 143, 0.1);
+}
+
+.create-animal textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.create-animal button {
+  background-color: #3D5F8F;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.create-animal button:hover {
+  background-color: #2d4563;
+}
+
+.create-animal button:active {
+  background-color: #1f2e41;
+}

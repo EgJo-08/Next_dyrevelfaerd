@@ -18,6 +18,18 @@ export async function createAnimalApi(animalData, token) {
 }
 
 
-export async function deleteAnimalApi(animalApi, token){
-    
+export async function deleteAnimalApi(id, token) {
+  const response = await fetch(
+    `http://localhost:4000/api/v1/animals/${id}`,
+    {
+      method: "DELETE",
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    }
+  );
+
+  if (!response.ok) {
+    throw new Error("Kunne ikke slette dyret");
+  }
 }
