@@ -4,6 +4,7 @@ import GetAnimals from "../../adopter/fetch";
 import "./dashboard.css";
 import AnimalCreateButton from "../../../components/animalsfunctions/AnimalCreateButton"
 import DeleteAnimalButton from "../../../components/animalsfunctions/animalDeleteButton"
+import AnimalEditButton from "../../../components/animalsfunctions/animalEditButton";
 
 export default async function DashboardPage() {
     const cookieStore = await cookies();
@@ -14,6 +15,14 @@ export default async function DashboardPage() {
 
     const token = cookieStore.get("token")?.value;
     const animals = await GetAnimals();
+    // fetch all available images/assets so the edit form can list them
+    const assetsRes = await fetch("http://localhost:4000/api/v1/assets", {
+        headers: {
+            Authorization: `Bearer ${token}`,
+        },
+        cache: "no-store",
+    });
+    const allImages = assetsRes.ok ? await assetsRes.json() : [];
 
     return (
         <section className="dashboard">
@@ -32,9 +41,7 @@ export default async function DashboardPage() {
                 <h3 className="animal-name">{animal.name}</h3>
 
                 <div className="animal-actions">
-                    <button className="edit-btn">
-                        Rediger
-                    </button>
+                    <AnimalEditButton animal={animal} allImages={allImages} token={token} />
 
                     <DeleteAnimalButton animalId={animal.id} token={token} />
                 </div>

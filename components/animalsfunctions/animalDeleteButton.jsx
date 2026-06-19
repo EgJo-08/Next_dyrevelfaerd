@@ -15,9 +15,7 @@ export default function DeleteAnimalButton({ animalId, token }) {
 
 
         Router.refresh();
-    } catch (error) {
-      console.error(error);
-      alert("Kunne ikke slette dyret");
+   
     } finally {
       setLoading(false);
     }

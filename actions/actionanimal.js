@@ -19,7 +19,7 @@ export async function createAnimal(formData) {
  
     validateAdminCookie(token, validUntil);
  
-    const animalData = {
+    const animalData = {    
         name: formData.get("name"),
         description: formData.get("description"),
         age: Number(formData.get("age")),
